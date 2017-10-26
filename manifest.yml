@@ -1,0 +1,13 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: CreateProjectMBLPT
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 256M
+  domain: mybluemix.net
+  host: new-app-kad2
+  services:
+    - create-project-mblpt-cloudantno-1509055276658
+    - create-project-mblpt-personalit-1509055311930
